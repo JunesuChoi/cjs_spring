@@ -13,6 +13,9 @@ dependencies {
 	// mariadb jdbc driver
 	implementation 'org.mariadb.jdbc:mariadb-java-client:2.+'
 	
+	//동구 밖 과수원샷!! 아카시아 꽃이 활짝 폈네 
+	//빠빠빠빰 빠빠빠빠 따라라라라 따라라라~!!
+	
 	// spring context and jdbc
 	implementation 'org.springframework:spring-context:5.+'
 	implementation 'org.springframework:spring-jdbc:5.+'
