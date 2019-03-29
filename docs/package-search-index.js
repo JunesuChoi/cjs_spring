@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.cjs.jdbc.spring"},{"l":"org.cjs.book.chap03"},{"l":"org.cjs.book.example"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.cjs.jdbc.spring"},{"l":"org.cjs.book.chap03"}]
