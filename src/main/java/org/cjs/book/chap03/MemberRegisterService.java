@@ -2,6 +2,7 @@ package org.cjs.book.chap03;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.cjs.book.chap03.MemberDao;
 
 /**
  * p.55 [리스트 3.1] MemberRegisterService 수정<br>
@@ -15,12 +16,15 @@ public class MemberRegisterService {
 
 	static Logger logger = LogManager.getLogger();
 
+	public MemberRegisterService() {
+		
+	}
 	/**
 	 * memberDao를 초기화하는 컨스트럭터
 	 */
-	public MemberRegisterService(MemberDao memberDao) {
+	public void setMemberDao(MemberDao memberDao) {
 		this.memberDao = memberDao;
-	}
+	}  
 
 	/**
 	 * 회원 등록
