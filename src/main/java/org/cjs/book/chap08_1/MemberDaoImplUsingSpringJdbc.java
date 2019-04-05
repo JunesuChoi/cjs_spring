@@ -3,6 +3,7 @@ package org.cjs.book.chap08_1;
 import java.util.List;
 
 import org.cjs.book.chap03.Member;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -11,7 +12,7 @@ import org.springframework.stereotype.Repository;
 /**
  * 인터페이스 MemberDao의 구현체. SpringJdbc를 사용해서 구현
  * 
- * @author cjs
+ * @author Jacob
  */
 @Repository("memberDao")
 public class MemberDaoImplUsingSpringJdbc implements MemberDao {
@@ -24,14 +25,8 @@ public class MemberDaoImplUsingSpringJdbc implements MemberDao {
 
 	static final String SELECT_ALL = "SELECT memberId, email, name FROM member ORDER BY memberId desc LIMIT ?,?";
 
+	@Autowired
 	JdbcTemplate jdbcTemplate;
-
-	/**
-	 * jdbcTemplate setter for injection
-	 */
-	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
-		this.jdbcTemplate = jdbcTemplate;
-	}
 
 	/**
 	 * p.194의 memberRowMapper<br>
