@@ -52,8 +52,8 @@ public class ArticleService {
 	public void updateArticle() {
 		Article article = new Article();
 		article.setArticleId("89");
-		article.setTitle("This is modified title.");
-		article.setContent("This is modified content");
+		article.setTitle("충격! 삼성전자 이재용 회장!!");
+		article.setContent("점심 식사를 먹었다고 전해져..");
 		if (articleDao.updateArticle(article) > 0)
 			System.out.println("글을 수정했습니다.");
 		else
@@ -64,7 +64,7 @@ public class ArticleService {
 	 * 글 삭제
 	 */
 	public void deleteArticle() {
-		if (articleDao.deleteArticle("96") > 0)
+		if (articleDao.deleteArticle("1") > 0)
 			System.out.println("글을 삭제했습니다.");
 		else
 			System.out.println("글을 삭제하지 못했습니다.");

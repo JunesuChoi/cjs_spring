@@ -22,14 +22,5 @@
 		<property name="dataSource" ref="dataSource" />
 	</bean>
 
-	<!-- p.190 [리스트 8.6]. jdbcTemplate을 memberDao에 injection -->
-	<bean id="memberDao"
-		class="org.cjs.book.chap08.MemberDaoImplUsingSpringJdbc">
-		<property name="jdbcTemplate" ref="jdbcTemplate" />
-	</bean>
-
-	<!-- memberDao를 memberService에 injection -->
-	<bean id="memberService" class="org.cjs.book.chap08.MemberService">
-		<property name="memberDao" ref="memberDao" />
-	</bean>
+	<context:component-scan base-package="org.cjs.book.chap08_1" />
 </beans>
